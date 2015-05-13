@@ -1,5 +1,7 @@
 <?php namespace App\Http\Controllers;
 
+use \Config;
+
 class HomeController extends Controller {
 
 	/*
@@ -30,10 +32,10 @@ class HomeController extends Controller {
 	 */
 	public function index()
 	{
-                $bonus_rojos = "25% Attack";
-                $bonus_verdes = "25% Defense";
-                $bonus_azules = "25% Income";
-                $bonus_naranjas = "25% Techs";
+                $bonus_rojos = Config::get('constants.bonus_rojos');
+                $bonus_verdes = Config::get('constants.bonus_verdes');
+                $bonus_azules = Config::get('constants.bonus_azules');
+                $bonus_naranjas = Config::get('constants.bonus_naranjas');
 		return view('home', compact('bonus_rojos', 'bonus_verdes', 'bonus_azules', 'bonus_naranjas'));
 	}
 

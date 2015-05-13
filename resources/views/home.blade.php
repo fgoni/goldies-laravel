@@ -6,8 +6,8 @@
 		<p>In this game, you manage an army from one of the four color tribes, and your aim is to be the strongest leader at the end of the Season.</p>
 		<p>To start, choose one of the tribes with a bonus that most suit your playstyle (be it aggresive, defensive or a bit of both), and start building up a sizeable and powerful Nation!</p>
         </div>
-        <div><form action="registrar.php" name="form_index" method="post">
-                <table class="index">
+        <div><form action="auth/register" name="form_index" method="post">
+                <table class="table">
                     <tr>
                         <th class="brown" colspan="4">Choose one of the tribes to join them in battle!</th>
                     </tr>

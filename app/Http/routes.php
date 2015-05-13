@@ -14,3 +14,12 @@
 Route::get('/', 'HomeController@index');
 
 Route::get('home', 'HomeController@index');
+
+Route::get('battlefield', 'BattlefieldController@index');
+
+Route::get('gameinfo', 'GameInfoController@index');
+
+Route::controllers([
+    'auth' => 'Auth\AuthController',
+    'password' => 'Auth\PasswordController',
+]);
